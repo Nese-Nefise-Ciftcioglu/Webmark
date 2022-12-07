@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nnc.webmark1.MainActivity">
+        <item
+            android:orderInCategory="100"
+            android:title="Enable dark mode"
+            app:actionViewClass="android.widget.Switch"
+            app:showAsAction="never"
+            android:id="@+id/action_darkmode_web"
+            android:checkable="true"
+            />
+        <item
+            android:orderInCategory="200"
+            android:title="Hide bookmark icon"
+            app:actionViewClass="android.widget.Switch"
+            app:showAsAction="never"
+            android:id="@+id/action_disableBookmark_web"
+            android:checkable="true"
+            />
+        <item
+            android:orderInCategory="300"
+            android:title="Refresh page"
+            app:showAsAction="never"
+            android:id="@+id/action_refreshPage_web"
+            />
+        <item
+            android:orderInCategory="400"
+            android:title="Copy the link"
+            app:showAsAction="never"
+            android:id="@+id/action_copyLink"
+            />
+        <item
+            android:orderInCategory="500"
+            android:title="Return to bookshelf"
+            app:showAsAction="never"
+            android:id="@+id/action_returnBookshelf_web"
+            />
+
+</menu>
+

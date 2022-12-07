@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nnc.webmark1.MainActivity">
+    <item
+        android:id="@+id/action_removeAds"
+        android:orderInCategory="100"
+        android:title="Remove Ads"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_turnonadblock"
+        android:orderInCategory="200"
+        android:title="Turn on Ad Block"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_loginbygoogle"
+        android:orderInCategory="300"
+        android:title="Sign in with Google"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_contactUs"
+        android:orderInCategory="400"
+        android:title="About us"
+        app:showAsAction="never" />
+
+</menu>
+

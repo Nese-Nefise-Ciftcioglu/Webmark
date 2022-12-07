@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation='vertical'
+    android:padding="30dp"
+
+    >
+
+
+    <EditText
+        android:id="@+id/newbookpopup_name"
+        android:layout_width="272dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="40sp"
+        android:background="@drawable/custom_input"
+        android:hint="Bookmark Title"
+
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/newbookpopup_link"
+        android:layout_width="272dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:background="@drawable/custom_input"
+        android:hint="Link"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newbookpopup_name"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:alpha="0.9"
+        android:backgroundTint="@color/teal_700"
+        android:text="save"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newbookpopup_link"
+
+        />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="cancel"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/saveButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newbookpopup_link" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
